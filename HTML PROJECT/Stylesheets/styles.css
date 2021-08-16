@@ -1,0 +1,200 @@
+                             /*STYLESHEET*/
+/*Written by: Maija Soares, C19478224*/
+ img {                                      /*Ensure that if window size changes that images adpt with it*/
+  max-width: 100%;                          /*max width of image*/
+  height: auto;                             /*height is set to auto*/
+}
+.responsive {                               /*header/banner class*/
+  width: 100%;                              /*header/banner class*/
+  height: auto;                             /*header/banner class*/
+}
+
+html, body{height:100%; margin:0; }         /*height set to 100% margin 0*/
+
+body{
+position: relative;                         /*for the footer to move with the page*/
+min-height: 100%;                           /*min height 100%*/
+}
+                           /*HEADER/BANNER*/
+.header {                                   /*header/banner class*/
+  background-repeat: no-repeat;             /*background doesnt repeat*/       
+  background-size: auto;                    /*the background size is set to auto*/
+  overflow: hidden;                         /*the overflow is clipped*/
+  background-repeat: no-repeat;             /*image does not repeat or tile*/
+  margin: 0;                                /*margin is 0*/
+  padding: 0px;                             /*padding is 0*/
+  max-width: 100%;                          /*max-width is 100%*/
+  height: auto;                             /*height is set to auto*/
+}
+                         /*TOP NAVIGATION BAR*/
+.navbar {                                   /*navigation bar class*/
+  overflow: hidden;                         /*the overflow is clipped*/
+  background-color: #CE2614;                /*the background colour is red*/
+  font-family: Verdana, Palatino;           /*Text font in navigation bar*/
+}
+
+.navbar a {                                 /*navigation bar a class*/
+  float: left;                              /*the navigation bar is on the left*/
+  font-size: 16px;                          /*text size is 16px*/
+  color: white;                             /*text colour is white*/
+  text-align: center;                       /*text is centerd*/
+  padding: 14px 16px;                       /*padding is 14pixels and 16pixels*/
+  text-decoration: none;                    /*text decoration is none*/
+}
+
+.dropdown {                                 /*dropdown class*/
+  float: left;                              /*the navigation bar drop down is on the left*/
+  overflow: hidden;                         /*the overflow is clipped*/
+}
+
+.dropdown .dropbtn {                        /*dropdown and dropdown button class*/
+  font-size: 16px;                          /*text size is 16px*/
+  border: none;                             /*theres no border*/
+  outline: none;                            /*theres no outline*/
+  color: white;                             /*text colour is white*/
+  padding: 14px 16px;                       /*padding is 14pixels and 16pixels*/
+  background-color: inherit;                /*background colour is inherited from parent class*/
+  font-family: inherit;                     /*font type is inherited from parent class*/
+  margin: 0;                                /*margin is 0*/
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn { /*navigation bar,a hover, dropdown hover and button class*/
+  background-color: #D0D3D4;                /*background colour grey when hovered over*/
+  color:black;                              /*text colour is black when hovered over*/
+}
+
+.dropdown-content {                         /*navigation bar dropdown content class*/
+  display: none;                            /*display is set to none*/
+  position: absolute;                       /*position is set to absolute*/
+  background-color: #17202A;                /*Background colour is set to a dark blue*/
+  min-width: 160px;                         /*minimum width is 160px*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*shadow under dropdown*/
+  z-index: 1;                               /**/
+}
+
+.dropdown-content a {                       /*navigation bar dropdown content a class*/
+  float: none;                              /*is not floated*/
+  color: white;                             /*text colour is white*/
+  padding: 12px 16px;                       /*padding is 12pixels and 16pixels*/
+  text-decoration: none;                    /*text decoration is none*/
+  display: block;                           /*display is set to block*/
+  text-align: left;                         /*text is aligned on the left*/
+}
+
+.dropdown-content a:hover {                 /*navigation bar dropdown content when hovered class*/
+  background-color: #ddd;                   /*background changes to a grey*/
+}
+
+.dropdown:hover .dropdown-content {         /*navigation bar dropdown content when hovered class*/
+  display: block;                           /*display is set to block*/
+}
+* {                                         /** class*/
+  box-sizing: border-box;                   /*Ensure proper sizing*/
+                            
+}
+                            /*MAIN CONTENT*/
+
+/* Main column */
+.main {                                     /*main column class*/
+  width: 80%;                               /*main is set to a width of 80%*/
+  margin: auto;                             /*margin is auto*/
+  text-align: left;                         /*text is aligned on the left*/
+  background-color: white;                  /*White background colour of the main column*/
+  padding: 0px;                             /*Padding of the main column is 0px*/
+  color: black;                             /*Black text colour of the main column*/
+  font-family:Verdana, Palatino;            /*text font of the main column*/
+  font-size: 11pt;                          /*text size of the main column*/
+  font-style: normal;                       /*text style of the main column*/
+  font-weight: 420;                         /*boldness of text of the main column*/
+  text-decoration: none;                    /*text decoration of the main column*/
+  padding-bottom:230px;                     /*this is so footer does not overlapp on content*/
+
+}
+.main a:link {                              /*unvisited link*/
+	color: #E74C3C;                     /*red colour*/
+}
+.main a:visited {                           /*visited link*/
+	color: #EB984E;                     /*orange colour*/
+}
+.main a:hover {                             /*colour of link when mouse is over it*/
+	color: #5D6D7E;                     /*blue colour*/
+}
+.main a:active {                            /*colour of link when clicked*/
+	color: #F4D03F;                     /*yellow colour*/
+}
+.main h1,h2,h3,h4,h5,h6{                    /*headings within the main column*/
+	margin-bottom: 20px;                /*20px margin on the right side*/
+	margin-top: 20px;                   /*20px margin on the right side*/                    
+	margin-left: 0px;                   /*no margin on the right side*/
+	margin-right: 0px;                  /*no margin on the right side*/
+        font-family: Verdana, 'Arial Black', Arial;/*heading text font for headings in main column*/
+}
+h1   {font-size: 30px}                      /*heading 1 resized*/
+h2   {font-size: 24px}                      /*heading 2 resized*/
+h3   {font-size: 22px}                      /*heading 3 resized*/
+h4   {font-size: 12px}                      /*heading 4 resized*/
+h5   {font-size: 18px}                      /*heading 5 resized*/
+h6   {font-size: 17px}                      /*heading 6 resized*/
+
+.main ul {                                  /*unordered list style*/
+        list-style-type: circle;            /*circle*/
+}
+.main ol {                                  /*ordered list style*/
+        list-style-type: default;           /*numbered list*/
+}
+
+                                  /*FOOTER*/
+.footer {
+  height:180px;                             /*footer height is set*/
+  position: fixed;                          /*position is fixed*/
+  left: 0;                                  /*left*/
+  bottom: 0;                                /*bottom*/
+  width: 100%;                              /*width 100%*/
+  margin-top:auto;                          /*margin-top is set to auto*/
+  display: block;                           /*display block*/
+  font-family:Verdana, Palatino;            /*text font of the footer*/
+  padding: 0px;                             /*Padding of the footer*/
+  text-align: left;                         /*text aligns to the left*/
+  background: #17202A;                      /*Dark Blue background*/
+  color: #AED6F1 ;                          /*Light Blue text colour of the footer*/
+  font-size: 11pt;                          /*text size of the footer*/
+  font-style: normal;                       /*text style of the footer*/
+  font-weight: 420;                         /*boldness of text of the footer*/
+  text-decoration: none;                    /*text decoration of the footer*/
+}
+.footer-image {                             /*footer images*/
+	margin-right:10px;                  /*margin right*/
+	margin-top: 10px;                   /*margin top*/
+	margin-bottom: 10px;                /*margin bottom*/
+	margin-left:10px;                   /*margin left*/
+}
+
+/* Create four equal columns that floats next to each other */
+.column {                                   /*make columns in the footer*/
+  float: left;                              /*floats to the left*/
+  width: 25%;                               /*the width of each column is 25%*/
+  padding: 10px;                            /*padding is 10px*/
+}
+
+/* Clear floats after the columns */
+.row:after {                                /*rows*/
+  content: "";                              /*content*/
+  display: table;                           /*display is set to table*/
+  clear: both;                              /*clear both*/
+}
+.footer a:link {                            /*unvisited link*/
+	color: #AED6F1;                     /*Light blue colour*/
+}
+.footer a:hover {                           /*colour of link when mouse is over it*/
+	color: #F4D03F;                     /*Yellow colour*/
+}
+.footer a:active {                          /*colour of link when clicked*/
+	color: #F4D03F;                     /*Yellow colour*/
+}
+
+.footer ul {                                /*unordered list style*/
+        list-style-type: circle;            /*circle*/
+}
+.footer ol {                                /*ordered list style*/
+        list-style-type: default;           /*numbered list*/
+}

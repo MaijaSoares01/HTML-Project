@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- Written by: Maija Soares, C19478224 -->
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Stylesheets\styles.css" type="text/css" media="screen" />
+<title>VALVE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body{                             /*in the html and bofy tag*/
+font-family:Verdana, Palatino;          /*text font of the main column*/
+}
+
+.button {                               /*class button*/
+  position:relative;                    /*the position of the button is relative*/
+  background-color: #028B83;            /*the button background colour is blue*/
+  border: none;                         /*there is no border*/
+  color: white;                         /*the text colour in the button is white*/
+  padding: 20px;                        /*the padding around the text in the button is 20px*/
+  text-align: center;                   /*the text is aligned to the center in the button*/
+  text-decoration: none;                /*there is no text decoration*/
+  display: inline-block;                /*it is displayed inline block*/
+  font-size: 16px;                      /*the font size in the button is 16 px*/
+  margin: 4px 2px;                      /*the margin for the button is 4px and 2px*/
+  border-radius: 12px;                  /*the border radius at 12 px makes the button rounded*/
+}
+
+.button:hover{                          /*when the button is hovered over*/
+  background-color: white;              /*the backgound colour of the button is white*/
+  color: #028B83;                       /*the text colour is blue*/
+  top:-10px;                            /*when the button is hovered over it moves 10px up*/
+  border-radius: 30px;                  /*the border radius at 30 px makes the button rounded*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*a shadow apperears under the button when hovered over*/
+}
+
+.image {                                /*class image*/
+    margin-bottom: 20px;                /*margin bottom is set to 20px*/
+    position:relative;                  /*the position of the image is relative*/
+    top:0px;                            /*the image doesnt move up*/
+    left:0px;                           /*the image doesnt move left*/
+    border-radius: 30px;	            /*the border radius at 30 px makes the image rounded*/
+}
+
+.image:hover {                          /*when the image is hovered over*/
+    top:-15px;                          /*the image moves up by 15px*/
+	border-radius: 30px;                /*the border radius at 30 px makes the image rounded*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*a shadow apperears under the image when hovered over*/
+}
+
+div.polaroid {                          /*polariod that include images and text*/
+  border-radius: 12px;                  /*the border radius at 12px makes the image rounded*/
+  width: 100%;                          /*the polariod has a width of 100%*/
+  background-color: white;              /*the backgound colour of the polariod is white*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);/*a shadow apperears under the polariod image*/
+  margin-bottom: 25px;                  /*margin bottom is set to 25px*/
+  position:relative;                    /*the position of the image is relative*/
+  top:0px;                              /*the image doesnt move up*/
+  left:0px;                             /*the image doesnt move left*/
+}
+
+div.container {                         /*the div container in the polariod*/
+  text-align: center;                   /*the text is aligned to the center in the container*/
+  padding: 10px 20px;                   /*the padding within the container is 10px and 20px*/
+  height:150px;                         /*the height of the containers is 150px*/
+}
+
+.column2 {                              /*column 2*/
+  width:33.33%;                         /*column2 has a width of 33.33%*/ 
+  float: left;                          /*things in the columns float to the left*/
+  padding: 5px;                         /*the column has a padding of 5px*/
+} 
+
+.column3 {                              /*column 3*/
+  width:50%;                            /*column3 has a width of 50%*/
+  float: left;                          /*things in the columns float to the left*/
+  padding: 5px;                         /*the column has a padding of 5px*/
+}
+
+@media screen and (max-width: 600px) {  /*when the screen is small*/
+  .column2,.column3 {                   /*column2 and 3*/
+    width: 100%;                        /*the columns have a width of 100%*/
+  }
+}
+
+.polaroid:hover {                       /*when polariod is hovered*/
+    top:-15px;                          /*when hovered the polariod moves up 15 px*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*when hovered over a shadow apperears under the polariod image*/
+}
+
+.main a:link {                          /*unvisited link*/
+	color: black;                       /*black colour*/
+	text-decoration:none;               /*no text decoration(no underline)*/
+}
+.main a:visited {                       /*visited link*/
+	color: black;                       /*black colour*/
+	text-decoration:none;               /*no text decoration(no underline)*/
+}
+.main a:hover {                         /*colour of link when mouse is over it*/
+	color: black;                       /*black colour*/
+	text-decoration:none;               /*no text decoration(no underline)*/
+}
+.main a:active {                        /*colour of link when clicked*/
+	color: black;                       /*black colour*/
+	text-decoration:none;               /*no text decoration(no underline)*/
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img style ="background-image"  src="Graphics/ValveBanner_v3.jpg" class="responsive">
+</div>
+<div class="navbar">
+  <a href="HomePage.html">Home</a>
+  <a href="AboutPage.html">About</a>
+  <a href="ProductsPage.html">Products</a>
+  <a href="ContactPage.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">More 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="ServicesPage.html">Steam</a>
+      <a href="FAQPage.html">FAQ</a>
+      <a href="ReviewsPage.html">Reviews</a>
+      <a href="NewsPage.html">News</a>
+      <a href="JobsAndCareersPage.html">Jobs</a>
+    </div>
+  </div> 
+</div>
+  <main class="main">
+  <br>
+  <br>
+  <br>
+ <section id="About">
+ <a href="AboutPage.html"><img class="image" alt="Valve" title="Valve" src="Graphics/valve.jpg" width="500" height="281" align="left" style="margin-right:50px"/></a>
+ <center><h2 style="color:#071D58">Who are we?</h2></center>
+ <p style="font-size:20px">Valve Corporation is an American video game developer, publisher, and digital distribution company. It is the developer of the software distribution platform Steam and the Half-Life, Counter-Strike, Portal, Day of Defeat, Team Fortress,
+ Left 4 Dead, and Dota series.</p><p><i>If you would like to learn more about us select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="AboutPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="Job">
+  <a href="JobsAndCareersPage.html"><img class="image" alt="ValveTeam" title="ValveTeam" src="Graphics/valveteam.jpg" width="500" height="261" align="right" style="margin-left:50px"/></a>
+ <center><h2 style="color:#071D58">Join the team?</h2></center>
+ <p style="font-size:20px">We're seeking collaborators who are the best at what they do. Opportunities at Valve run broad and deep across the following areas, where we're always hiring for all 
+ positions.</p><p><i>If you would like to join us at Valve Corporation select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="JobsAndCareersPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="News">
+ <a href="NewsPage.html"><img class="image" alt="Latest" title="Latest" src="Graphics/alyx.gif" width="500" height="281" align="left" style="margin-right:50px"/></a>
+ <center><h2 style="color:#071D58">Want to know the latest News?</h2></center>
+ <p style="font-size:20px">We have many projects in the works, games,hardware and software. A couple have been announced, while others remain top secret. This year, our Index VR kits became available to purchase and we released 
+ Half-Life: Alyx </p><p><i>If you would like to see more of our Latest News, select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="NewsPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="Products">
+ <a href="ProductsPage.html"><img class="image" alt="Products" title="Products" src="Graphics/glados.gif" width="500" height="282" align="right" style="margin-left:50px"/></a>
+ <center><h2 style="color:#071D58">Games and Hardware</h2></center>
+ <p style="font-size:20px">We make consumer electronic devices that improve gaming on the PC. Things like the Steam Controller and the Steam Link. Our games attract millions
+and define genres.</p><p><i>If you would like to purchase hardware or one of our many games, select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="ProductsPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="Services">
+ <a href="ServicesPage.html"><img class="image" alt="Services" title="Services" src="Graphics/steam.jpg" width="500" height="281" align="left" style="margin-right:50px"/></a>
+ <center><h2 style="color:#071D58">Steam and Vr</h2></center>
+ <p style="font-size:20px">Steam serves as a digital content distribution channel. It allows creators and publishers to deliver content to their customers.
+ Source is a 3D game engine developed by Valve. It debuted as the successor to GoldSrc </p>
+ <p><i>If you would like to learn more about the software and services we offer, select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="ServicesPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="FAQ">
+ <a href="FAQPage.html"><img class="image" alt="FAQ" title="FAQ" src="Graphics/faq.jpg" width="500" height="267" align="right" style="margin-left:50px"/></a>
+ <center><h2 style="color:#071D58">Frequently Asked Questions</h2></center>
+ <p style="font-size:20px">We get hundereds of questions a day about existing and upcoming games. Our FAQ page contains the most asked questions about some 
+ of our most popular and our upcoming games.</p><p><i>If you would like to go to our FAQ page, select the image beside this article or the 'Find out 
+ more' button...</i></p>
+ <center><a href="FAQPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+  <section id="Reviews">
+ <a href="ReviewsPage.html"><img class="image" alt="Left4Dead" title="Left4Dead" src="Graphics/left4dead.jpg" width="500" height="333" align="left" style="margin-right:50px"/></a>
+ <center><h2 style="color:#071D58">Award winning games</h2></center>
+ <p style="font-size:20px">Our earlier titles were built on an innovative engine with world-class gameplay as their paramount goal, and praised by critics 
+ as games that revitalized or even invented their genres.</p><p><i>If you would like to see the reviews for games we have release, select the image beside this article or the 'Find out more' button...</i></p>
+ <center><a href="ReviewsPage.html"><button class="button">Find out more &#8680;</button></a></center>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <section id="Quick Updates">
+ <h2 style="color:#071D58">Quick Updates</h2>
+ <div class="row">
+   <div class="column2">
+   <a href="https://playartifact.com/news/2096930128295276281">
+     <div class="polaroid">
+     <img src="Graphics/artifact.png" alt="Artifact" style="width:100%" title="Artifact">
+     <div class="container">
+     <p><b>Looking Forward, Looking Back. Reboot Artifact</b></p><p>When the members of the team decided to reboot Artifact we all did it for different reasons.</p>
+     </div>
+     </div>
+	 </a>
+   </div>
+  <div class="column2">
+  <a href="https://t.co/NCOLWqSp3e?amp=1">
+   <div class="polaroid">
+     <img src="Graphics/alyxAN.gif" alt="Half-Life: Alyx" style="width:100%" title="Half-Life: Alyx">
+     <div class="container">
+     <p><b>Half-Life: Alyx. Now Available</b></p><p>Half-Life: Alyx is Valve’s VR return to the Half-Life series.</p>
+     </div>
+   </div>
+   </a>
+  </div>
+  <div class="column2">
+  <a href="https://store.steampowered.com/app/1046930/Dota_Underlords/">
+   <div class="polaroid">
+     <img src="Graphics/dota.jpg" alt="Dota Underlords" style="width:100%" title="Dota Underlords">
+     <div class="container">
+     <p><b>Dota Underlords Season One is out now!</b></p><p>Dota Underlords Season One begins today! Jump in now on Steam, iOS, and Android at https://underlords.com</p>
+     </div>
+   </div>
+   </a>
+  </div>
+</div>
+<div class="row">
+   <div class="column3">
+   <a href="https://store.steampowered.com/app/687440/In_The_Valley_of_Gods/">
+     <div class="polaroid">
+     <img src="Graphics/InTheValleyOfGods.jpg" alt="Artifact" style="width:100%">
+     <div class="container">
+     <p><b>In the Valley of Gods</b></p><p>In the Valley of Gods is currently in development and does not yet have a release date....<i>coming soon</i></p>
+     </div>
+     </div>
+	 </a>
+   </div>
+  <div class="column3">
+  <a href="https://store.steampowered.com/valveindex">
+   <div class="polaroid">
+     <img src="Graphics/Valve-Index.jpg" alt="Artifact" style="width:100%">
+     <div class="container">
+     <p><b>Valve Index VR kits</b></p><p>Valve Index VR kits are available for purchase.</p>
+     </div>
+   </div>
+   </a>
+  </div>
+</div>
+</section>
+
+   </main>
+<footer class="footer">
+  <div class="row">
+  <div class="column">
+  <img alt="Valvelogo" src="Graphics/valvelogo.png" width="169" height="50"  class="footer-image">
+  <p style="font-size:11px">Phone: (425) 889-9642</p>
+  <p style="font-size:11px">Fax: (425) 827-4843</p>
+  <p style="font-size:11px">Address: <a href="https://www.google.com/maps/search/PO+BOX+1688+Bellevue,+WA+98009/@47.6101135,-122.2176602,14z/data=!3m1!4b1" 
+     style="text-decoration: none">PO BOX 1688; Bellevue, WA 98009</a></p>
+  <p style="font-size:11px">Email: <a href="ContactPage.html" style="text-decoration: none">Valve contact page</a></p>
+  </div>
+  <div class="column">
+    <p><a href="Privacy.html" style="text-decoration: none">Privacy Policy Page</a></p>
+  <p><a href="Terms.html" style="text-decoration: none">Terms and Conditions</a></p>
+  <p><a href="AboutPage.html" style="text-decoration: none">About Us</a></p>
+  </div>
+  <div class="column">
+  <p><a href="JobsAndCareersPage.html" style="text-decoration: none">Jobs/Careers Page</a></p>
+  <p><a href="ContactPage.html" style="text-decoration: none">Contact Page</a></p>
+  <p><a href="FAQPage.html" style="text-decoration: none">FAQ Page</a></p>
+  </div>
+  <div class="column">
+    <p align="right"><a href="https://store.steampowered.com/">
+    <img alt="Steam" src="Graphics/steamlogo.vnd"
+    width="50" height="50"  class="footer-image"></p>
+	<p align="right"><a href="https://ie.linkedin.com/company/valve-corporation/" style="text-decoration: none">
+	<img alt="ValveLinkedIn" src="Graphics/linkedin_.svg"
+	width="35" height="35"  class="footer-image">
+	<a href="https://twitter.com/valvesoftware/media?lang=en">
+    <img alt="ValveTwitter" src="Graphics/twitter.svg"
+    width="35" height="35"  class="footer-image"></p>
+</div>
+</div> 
+</footer>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!-- Written by: Maija Soares, C19478224 -->
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Stylesheets\styles.css" type="text/css" media="screen" />
+<title>VALVE</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html, body{                  /*in the html and body tags*/
+font-family:Verdana, Palatino;/*text font of the main column*/
+}
+ 
+.dropbtn2 {                  /*dropdown button*/
+  width: 100%;               /*has a width of 100%*/
+  background-color: #3498DB; /*background colour is blue*/
+  color: white;              /*text colour is white*/
+  padding: 16px;             /*the padding in the button is 16px*/
+  font-size: 16px;           /*the text size is 16px*/
+  border: none;              /*there is no border*/
+  cursor: pointer;           /*cursor is a pointer*/
+}
+
+.dropbtn2:hover, .dropbtn2:focus {/*when dropdown is hovered over*/
+  background-color: #2980B9; /*background colour is a darker blue*/
+}
+
+.dropdown2 {                 /*this includes the dropdown button and content*/
+  width: 100%;               /*has a width of 100%*/
+  margin: 10px;              /*there is a margin of 10px*/
+  position: relative;        /*its position is relative*/
+  display: inline-block;     /*it displays inline block*/
+}
+
+.dropdown-content2 {         /*the content in the dropdown*/
+  padding: 10px;             /*the padding in the content is 16px*/
+  width: 100%;               /*has a width of 100%*/
+  display: none;             /*it displays is none*/
+  position: absolute;        /*its position is absolute*/
+  background-color: #f1f1f1; /*the content background colour is a light grey/white*/
+  min-width: 160px;          /*the minimum width is 160px*/
+  overflow: auto;            /*overflow is auto*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*a shadow apperears under the content*/
+  z-index: 1;                /*zindex is 1*/
+}
+
+.dropdown2 a:hover {background-color: #ddd;}/*when the dropdown button is hovered over is changes to a darker blue*/
+
+.show {display: block;}      /*this class shows the contents of the dropdown boxes in a block*/
+
+.topnav {                    /*FAQ top navigation bar(this contains a search bar and index of page)*/
+  overflow: hidden;          /*the overflow is hidden*/
+  background-color: #95A5A6; /*the colour of the navigation bar is red*/
+  margin-bottom: 30px;       /*theres a margin space of 30px at the bottom of the navigation bar*/
+}
+
+.topnav a {                  /*within the FAQ navigation bar*/
+  float: left;               /*the text is floated to the left*/
+  display: block;            /*display is set to block*/
+  color: white;              /*text colour is white*/
+  text-align: center;        /*text is aligned to the center*/
+  padding: 14px 16px;        /*theres a padding of 14 and 16 px*/
+  text-decoration: none;     /*there is no text decorations*/
+  font-size: 17px;           /*font size within the FAQ navigation bar is set to 17px*/
+}
+
+.topnav a:hover {            /*When the buttons in the FAQ navigation bar are hovered over*/
+  background-color: #ddd;    /*the background colour is grey*/
+  color: black;              /*the text colour is black*/
+}
+
+.topnav a.active {           /*when the buttons in the FAQ navigation bar are clicked on*/
+  background-color: #F3AD21; /*when FAQ navigation button is clicked then background colour changes to orange*/
+  color: white;              /*text colour is white*/
+}
+
+@media screen and (max-width: 600px) {/*display if width is at max 600px*/
+  
+  .topnav a {/*the text inside the search bar and the submit button*/
+    float: none;             /*float is set to none*/
+    display: block;          /*display is block*/
+    text-align: left;        /*text is aligned to the left*/
+    width: 100%;             /*width is set to 100%*/
+    margin: 0;               /*margin is set to 0*/
+    padding: 14px;           /*padding is 14px*/
+  }
+}
+
+.NameOfPage{                 /*Name of the page*/
+margin-left:10px;            /*margin to the left is set to 10px*/
+margin-top:25px;             /*margin to the top is set to px*/
+margin-bottom: 25px;         /*margin to the left is set to 10px*/
+text-align:left;             /*the text is aligned to the left*/
+font-family:Segoe UI, Verdana;/*the font family is Segoe UI*/
+}
+
+.down {                      /*this class creates a down arrow*/
+  transform: rotate(45deg);  /*rotates the arrow*/
+  -webkit-transform: rotate(45deg);/*rotates the arrow*/
+}
+
+i {                          /*this class creates the line of the down arrow*/
+  float:right;               /*the arrow is floated to the right*/
+  border: solid white;       /*the border of the arrow is solid white*/
+  border-width: 0 3px 3px 0; /*border width is 0 3px 3px 0*/
+  display: inline-block;     /*it is displayed in an inline block*/
+  padding: 3px;              /*it has a padding of 3px*/
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img style ="background-image"  src="Graphics/ValveBanner_v3.jpg" class="responsive">
+</div>
+<div class="navbar">
+  <a href="HomePage.html">Home</a>
+  <a href="AboutPage.html">About</a>
+  <a href="ProductsPage.html">Products</a>
+  <a href="ContactPage.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">More</button>
+    <div class="dropdown-content">
+      <a href="ServicesPage.html">Steam</a>
+      <a href="FAQPage.html">FAQ</a>
+      <a href="ReviewsPage.html">Reviews</a>
+      <a href="NewsPage.html">News</a>
+      <a href="JobsAndCareersPage.html">Jobs</a>
+    </div>
+  </div> 
+</div>
+<h1 class="NameOfPage">Frequently Asked Questions</h1>
+<center><p style="width:80%"><em>Here are the most asked questions about some of our most popular and our upcoming games. If you wish to jump to a specific section/game please select one from our index below...</em></p></center>
+<div class="topnav">
+  <a href="#In the Valley of Gods">In the Valley of Gods</a>
+  <a href="#Dota 2">Dota 2</a>
+  <a href="#Counter-Strike: Global Offensive">Counter-Strike: Global Offensive</a>
+  <a href="#Half-Life">Half-Life</a>
+  <a href="#Team Fortress 2">Team Fortress 2</a>
+ 
+</div>
+
+
+<main class="main">
+<a name="In the Valley of Gods"><center><h2 style="color:#95A5A6">In the Valley of Gods</h2></a>
+<p><i>From the creators of Firewatch, In the Valley of Gods is a single-player first-person adventure. Explore a remote and ancient valley in the Egyptian desert,
+ uncovering treasure and treachery in pursuit of a discovery that could bring you fame and fortune—or leave you for dead, buried beneath the sands.</i></p></center>
+<div class="dropdown2">
+  <button onclick="myFunction('ITVOG1')" class="dropbtn2" id="dropbtn21">Tell us more about "In the Valley of Gods".<i class="arrow down"></i></button>
+  <div id="ITVOG1" class="dropdown-content2">
+    <p>In the Valley of Gods is a single-player first person video game set in Egypt in the 1920s. You play as an explorer and filmmaker who, 
+	along with your old partner, has traveled to the middle of the desert in the hopes of making a seemingly-impossible discovery and an incredible film.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('ITVOG2')" class="dropbtn2" id="dropbtn22">What platforms will the game release on?<i class="arrow down"></i></button>
+  <div id="ITVOG2" class="dropdown-content2">
+    <p>In the Valley of Gods is in development for PC platforms (Windows, Mac, and Linux), but we haven't ruled out more platforms, including consoles. 
+	Follow us on <a href="http://www.twitter.com/camposanto">Twitter</a> and <a href="http://blog.camposanto.com/">our development blog</a> for news as it emerges.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('ITVOG3')" class="dropbtn2" id="dropbtn23">Who is the publisher?<i class="arrow down"></i></button>
+  <div id="ITVOG3" class="dropdown-content2">
+    <p>In the Valley of Gods is a self-published game by Campo Santo.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('ITVOG4')" class="dropbtn2" id="dropbtn24">When does the game release?<i class="arrow down"></i></button>
+  <div id="ITVOG4" class="dropdown-content2">
+    <p>In the Valley of Gods is in development and does not yet have a release date, but we currently intend to release the game in 2020.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('ITVOG5')" class="dropbtn2" id="dropbtn25">What engine did you use to create the game?<i class="arrow down"></i></button>
+  <div id="ITVOG5" class="dropdown-content2">
+    <p>In the Valley of Gods is being developed on the latest version of Unity. As for our secrets, we tend to share those <a href="<a href="http://blog.camposanto.com/">our development blog</a>on our development blog</a>.</p>
+  </div>
+</div>
+
+
+ 
+<a name="Dota 2"><center><h2 style="color:#95A5A6">Dota 2</h2></a>
+<p><i>Dota 2 is a multiplayer online battle arena video game developed and published by Valve. The game is a sequel to Defense of the Ancients, which was a 
+community-created mod for Blizzard Entertainment's Warcraft III: Reign of Chaos and its expansion pack, The Frozen Throne.</i></p></center>
+<div class="dropdown2">
+  <button onclick="myFunction('Dtwo1')" class="dropbtn2" id="dropbtn26">Will I be able to customize my character without buying anything?<i class="arrow down"></i></button>
+  <div id="Dtwo1" class="dropdown-content2">
+    <p>Yes, players who don't want to buy things from the Dota 2 Store will be able to earn them in a variety of ways, such as by simply playing the game, 
+	increasing their Battle Level, or by trading with other players.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('Dtwo2')" class="dropbtn2" id="dropbtn27">Will I have to pay to get access to heroes?<i class="arrow down"></i></button>
+  <div id="Dtwo2" class="dropdown-content2">
+    <p>All of the heroes will be available free of charge. We believe restricting player access to heroes could be destructive to game design, so it's 
+	something we plan to avoid.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('Dtwo3')" class="dropbtn2" id="dropbtn28">What are Battle Levels? What are Battle Points?<i class="arrow down"></i></button>
+  <div id="Dtwo3" class="dropdown-content2">
+    <p>Each time you complete a matchmaking game, you will be rewarded with Battle Points. Earn enough of them, and your profile's Battle Level will 
+	increase, at which point you'll receive a new item.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('Dtwo4')" class="dropbtn2" id="dropbtn29">Why did you choose Free to Play?<i class="arrow down"></i></button>
+  <div id="Dtwo4" class="dropdown-content2">
+    <p>We think it fits the way we build and iterate on our games over time. We (Valve and the Dota community) will be building lots of interesting things 
+	in the coming years, and learning every step of the way. The more people we have generating ideas and providing feedback, the better Dota will become.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('Dtwo5')" class="dropbtn2" id="dropbtn210">What Is MMR in Dota 2?<i class="arrow down"></i></button>
+  <div id="Dtwo5" class="dropdown-content2">
+    <p><a href="<a href="https://dmarket.com/blog/dota2-ranks/">Matchmaking Rating Dota 2 (MMR)</a> is a system designed for determining the skill rating of an each player. The main purpose of MMR is to find equal 
+	opponents and teammates for fairplay. The system is designed to not let the more experienced players team up or play against players with a lower skill 
+	level.</p>
+  </div>
+</div>
+
+
+ 
+<a name="Counter-Strike: Global Offensive"><center><h2 style="color:#95A5A6">Counter-Strike: Global Offensive</h2></a>
+<p><i>Counter-Strike: Global Offensive is a multiplayer first-person shooter video game developed by Valve and Hidden Path Entertainment. 
+It is the fourth game in the Counter-Strike series and was released for Windows, OS X, Xbox 360, and PlayStation 3 in August 2012, while the Linux version 
+was released in 2014.</i></p></center>
+<div class="dropdown2">
+  <button onclick="myFunction('CSGO1')" class="dropbtn2" id="dropbtn211">Can I host my own dedicated server?<i class="arrow down"></i></button>
+  <div id="CSGO1" class="dropdown-content2">
+    <p>Yes. Information about hosting dedicated servers can be found <a href="https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Dedicated_Servers">here</a>.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('CSGO2')" class="dropbtn2" id="dropbtn212">Can I submit weapon finishes for CS:GO?<i class="arrow down"></i></button>
+  <div id="CSGO2" class="dropdown-content2">
+    <p>Yes. Information on creating weapon finishes for CS:GO can be found <a href="https://new.blog.counter-strike.net/workshop/finishes/">here</a>. Once completed, we recommend uploading your weapon 
+	finish to <a href="https://steamcommunity.com/workshop/browse/?appid=730">CS:GO’s 
+	Steam Workshop</a> so it can be seen and voted on by members of the Steam community.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('CSGO3')" class="dropbtn2" id="dropbtn213">Can I make maps for CS:GO?<i class="arrow down"></i></button>
+  <div id="CSGO3" class="dropdown-content2">
+    <p>Yes. Information on making maps for CS:GO can be found <a href="https://new.blog.counter-strike.net/workshop/finishes/">here</a>. Like weapon finishes, when your map is complete we recommend uploading it to <a href="https://steamcommunity.com/workshop/browse/?appid=730">CS:GO’s 
+	Steam Workshop</a> so it can be seen, downloaded, and played on by members of the community.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('CSGO4')" class="dropbtn2" id="dropbtn214">How do I provide feedback about CS:GO?<i class="arrow down"></i></button>
+  <div id="CSGO4" class="dropdown-content2">
+    <p>You can provide feedback about CS:GO on <a href="https://steamcommunity.com/app/730/discussions/">Steam Discussions</a> or through the email address csgoteamfeedback [at] valvesoftware [dot] com.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('CSGO5')" class="dropbtn2" id="dropbtn215">What are the system requirements for CS:GO?<i class="arrow down"></i></button>
+  <div id="CSGO5" class="dropdown-content2">
+    <p>System requirements for CS:GO can be found on our <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/">Steam Store page</a>.</p>
+  </div>
+</div>
+
+
+ 
+<a name="Half-Life"><center><h2 style="color:#95A5A6">Half-Life</h2></a>
+<p><i>Half-Life is a series of first-person shooter games developed and published by Valve. The games combine shooting combat, puzzles, and storytelling. 
+The original Half-Life, Valve's first product, was released in 1998 to critical and commercial success.</i></p></center>
+<div class="dropdown2">
+  <button onclick="myFunction('HL1')" class="dropbtn2" id="dropbtn216">What order should I play the Half-Life games in?<i class="arrow down"></i></button>
+  <div id="HL1" class="dropdown-content2">
+    <p><b>The official order of the Half-Life games is as follows:</b>
+     <ol>
+	<li>Half-Life, or Half-Life: Source</li>
+	<li>Half-Life: Opposing Force, Blue Shift, or Decay</li>
+	<li>Half-Life 2</li>
+	<li>Half-Life 2: Episode 1</li>
+	<li>Half-Life 2: Episode 2</li>
+     </ol>
+	It is recommended you play the games in this order, however you can still enjoy any of the games if you haven't played the games that come before it.
+	If you are going to start with Half-Life 2, you can find out all you really need to know with a simple Google search.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('HL2')" class="dropbtn2" id="dropbtn217">Will Half-Life Alyx Be VR-Only?<i class="arrow down"></i></button>
+  <div id="HL2" class="dropdown-content2">
+    <p>Unfortunately yes, you’ll need a VR headset to play Half-Life: Alyx. The game was built from the ground up with VR in mind which means it doesn’t even 
+	include a traditional mouse/keyboard control option. The good news is that Half-Life: Alyx will be 
+	<a href="https://www.newegg.com/VR-Headsets/SubCategory/ID-3629?Tid=241616/?cm_sp=GameCrate-_-Article-_-Alyx-_-NA">playable on all PC-compatible VR headsets</a> 
+	including the Oculus Rift and HTC Vive.</p>
+    <p>If you were lucky enough to snag a Valve Index VR headset before Half-Life: Alyx’s announcement caused a surge in sales and subsequent back order, 
+	you’ll actually get a copy of the game for free along with a few extra bonuses like unique in-game weapon skins.</p> 
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('HL3')" class="dropbtn2" id="dropbtn218">Is Half-Life: Alyx Coming To Other Platforms?<i class="arrow down"></i></button>
+  <div id="HL3" class="dropdown-content2">
+    <p>For the time being, Half-Life: Alyx will be PC-only. However, Valve has stated that it could invest further in the Half-Life property if Alyx winds up 
+	being a success (which it most likely will be), so it’s possible the game could eventually be ported over to other VR platforms like PlayStation VR. 
+	Upcoming gaming consoles like the Xbox Series X and PlayStation 5 will also likely have some sort of VR capability, so an eventual console port of 
+	Half-Life: Alyx shouldn’t be ruled out entirely.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('HL4')" class="dropbtn2" id="dropbtn219">What Does Half-Life: Alyx’s Story Entail?<i class="arrow down"></i></button>
+  <div id="HL4" class="dropdown-content2">
+    <p>Valve has been careful not to reveal too much about Half-Life: Alyx’s story, but we do know a bit about what’s new and what fans of previous games 
+	will assuredly recognize. As we previously mentioned, Alyx’s story is a prequel set after the events of the original Half-Life but before the events of 
+	Half-Life 2. Players control Alyx Vance as she works alongside her father Dr. Eli Vance to fight back against the oppressive Combine forces who seek to 
+	subjugate humanity.</p>
+	<p>Half-Life: Alyx will be set in City 17, the same location from Half-Life 2, and it will feature more than a few recognizable friends and foes. Along 
+	with Alyx and her father, players will encounter iconic enemies like headcrabs and barnacles, and they’ll even cross paths with the enigmatic figure known 
+	as G-Man.  </p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('HL5')" class="dropbtn2" id="dropbtn220">What Are Half-Life: Alyx’s PC Requirements?<i class="arrow down"></i></button>
+  <div id="HL5" class="dropdown-content2">
+    <p>You won’t need a super-beefy PC to meet Half-Life: Alyx’s minimum system requirements, but if your current gaming rig is more on the low or mid-range level, you might want to invest in a few upgrades. Half-Life: Alyx’s minimum system requirements are as follows:
+	<ul>
+	<li><b>Operating System:</b> Windows 10</li>
+	<li><b>Processor:</b> <a href="https://www.newegg.com/CPUs-Processors/Category/ID-34/?cm_sp=GameCrate-_-Article-_-Alyx-_-NA">Intel Core i5-7500 or AMD Ryzen 5 1600</a></li>
+	<li><b>Graphics Card:</b> <a href="https://www.newegg.com/Desktop-Graphics-Cards/SubCategory/ID-48?Tid=7709/?cm_sp=GameCrate-_-Article-_-Alyx-_-NA">Nvidia GTX 1060 or AMD RX 580</a> with at least 6 GB of VRAM</li>
+	<li><b>Memory:</b> <a href="https://www.newegg.com/Memory/Category/ID-17/?cm_sp=GameCrate-_-Article-_-Alyx-_-NA">12 GB  RAM</a></li>
+	</p>
+  </div>
+</div>
+
+
+ 
+<a name="Team Fortress 2"><center><h2 style="color:#95A5A6">Team Fortress 2</h2></a>
+<p><i>Team Fortress 2 is a multiplayer first-person shooter game developed and published by Valve. It is the sequel to the 1996 mod Team Fortress for Quake 
+and its 1999 remake, Team Fortress Classic. It was released as part of the video game bundle The Orange Box in October 2007 for Microsoft Windows and the 
+Xbox 360.</i></p></center>
+<div class="dropdown2">
+  <button onclick="myFunction('TFtwo1')" class="dropbtn2" id="dropbtn221">How is a free account different than a premium account?<i class="arrow down"></i></button>
+  <div id="TFtwo1" class="dropdown-content2">
+    <p>Premium accounts have a few extra features, including access to rare and cosmetic items through random item drops, the ability to store more items in
+	your backpack, and more powerful trading and crafting abilities. Otherwise, the gameplay experience will be identical for both accounts.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('TFtwo2')" class="dropbtn2" id="dropbtn222">Is there a way to practice before I play online?<i class="arrow down"></i></button>
+  <div id="TFtwo2" class="dropdown-content2">
+    <p>Yes. We offer helpful training campaigns that will teach you the basic gameplay mechanics of various mercenaries. We also have a mode that allows you 
+	to practice on an assortment of maps with CPU bots with a variety of skill levels.</p> 
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('TFtwo3')" class="dropbtn2" id="dropbtn223">Will I need a credit card to play?<i class="arrow down"></i></button>
+  <div id="TFtwo3" class="dropdown-content2">
+    <p>No. However, to make purchases from the in-game Mann Co. Store you will need to use one of our 
+	<a href="https://support.steampowered.com/kb_article.php?ref=8360-WEJC-2625#acceptedforms">accepted payment methods</a>.</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('TFtwo4')" class="dropbtn2" id="dropbtn224">How does the Coaching feature work?<i class="arrow down"></i></button>
+  <div id="TFtwo4" class="dropdown-content2">
+    <p>If a new player on a Free account upgrades to a premium account and indicates that you were their most helpful friend, you will receive a wearable 
+	item. Helping new users via the Coaching feature is a great way to meet new players and help them out!</p>
+  </div>
+</div>
+<div class="dropdown2">
+  <button onclick="myFunction('TFtwo5')" class="dropbtn2" id="dropbtn225"> Won't going Free to Play mean more griefers and cheaters?<i class="arrow down"></i></button>
+  <div id="TFtwo5" class="dropdown-content2">
+    <p>We're increasing our focus on making sure that hostile players can't ruin your fun. Specifically, we'll be keeping a close eye on players exploiting 
+	the ability to make infinite free accounts to bypass bans. We've built systems that'll allow us to measure and track what these players are doing, and
+	respond quickly.
+	</p>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function myFunction(id) {
+  document.getElementById(id).classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</main>
+<footer class="footer">
+  <div class="row">
+  <div class="column">
+  <img alt="Valvelogo" src="Graphics/valvelogo.png" width="169" height="50"  class="footer-image">
+  <p style="font-size:11px">Phone: (425) 889-9642</p>
+  <p style="font-size:11px">Fax: (425) 827-4843</p>
+  <p style="font-size:11px">Address: <a href="https://www.google.com/maps/search/PO+BOX+1688+Bellevue,+WA+98009/@47.6101135,-122.2176602,14z/data=!3m1!4b1" 
+     style="text-decoration: none">PO BOX 1688; Bellevue, WA 98009</a></p>
+  <p style="font-size:11px">Email: <a href="ContactPage.html" style="text-decoration: none">Valve contact page</a></p>
+  </div>
+  <div class="column">
+    <p><a href="Privacy.html" style="text-decoration: none">Privacy Policy Page</a></p>
+  <p><a href="Terms.html" style="text-decoration: none">Terms and Conditions</a></p>
+  <p><a href="AboutPage.html" style="text-decoration: none">About Us</a></p>
+  </div>
+  <div class="column">
+  <p><a href="JobsAndCareersPage.html" style="text-decoration: none">Jobs/Careers Page</a></p>
+  <p><a href="ContactPage.html" style="text-decoration: none">Contact Page</a></p>
+  <p><a href="FAQPage.html" style="text-decoration: none">FAQ Page</a></p>
+  </div>
+  <div class="column">
+    <p align="right"><a href="https://store.steampowered.com/">
+    <img alt="Steam" src="Graphics/steamlogo.vnd"
+    width="50" height="50"  class="footer-image"></p>
+	<p align="right"><a href="https://ie.linkedin.com/company/valve-corporation/" style="text-decoration: none">
+	<img alt="ValveLinkedIn" src="Graphics/linkedin_.svg"
+	width="35" height="35"  class="footer-image">
+	<a href="https://twitter.com/valvesoftware/media?lang=en">
+    <img alt="ValveTwitter" src="Graphics/twitter.svg"
+    width="35" height="35"  class="footer-image"></p>
+</div>
+</div> 
+</footer>
+</body>
+</html>
